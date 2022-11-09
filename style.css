@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #4a3e74, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 70vh;
+    width: 60%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    border-radius: 1.3rem;
+    z-index: 3;
+    backdrop-filter: blur(1rem);
+    display: flex;
+    position: relative;
+    box-shadow: 6px 6px 30px rgba(39, 39, 39, 0.6);
+}
+
+/* Image Background */
+.body {
+    background-image: url("https://cdn.discordapp.com/banners/282008877753696268/a_bf25f2b806b62f85ba43c7ef9cf4ba34.gif?size=4096");
+    position: absolute;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 15%;
+}
+
+.dashboard {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    border-radius: 1.2rem;
+    position: relative;
+}
+
+.user {
+    position: absolute;
+    top: 10%;
+}
+
+/* User Bar Text */
+.user h3 {
+    margin: 0.3rem;
+    position: relative;
+    opacity: 0.7;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}
+
+.links {
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links img {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0em;
+    padding: 1rem 1rem;
+    align-items: center;
+}
+
+/* Links for discord, github, and ogu. */
+.links a {
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0, 1);
+}
+
+/* Right side of dashboard */
+.glass h1 {
+    position: absolute;
+    right: 18%;
+    align-items: center;
+    bottom: 50%;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0, 1);
+    font-size: 1.5rem;
+}

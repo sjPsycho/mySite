@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <!-- Inputting background video for music -->
+        <!--<video id="musicVid" class="body1" autoplay loop src="./videos/video.mp4" width="500px"></video> -->
+        <!-- Script to lower volume of video -->
+        <audio id="musicVid" autoplay loop src="./videos/video.mp3" type="audio/mpeg"></audio>
+        <script>
+            var v = document.getElementById("musicVid");
+            function My_Video() {
+                v.volume = 0.4;
+            }
+            My_Video();
+        </script>
+        <!-- Body of page -->
+        <div class="body"></div>
+        <!-- Glass -->
+        <section class="glass">
+            <!-- Dashboard -->
+            <h1 class="mntnc">Under Maintenance.</h3>
+            <div class="dashboard">
+                <div class="user">
+                    <img src="./images/avatar1.png" alt="">
+                    <h3>SJ</h3>
+                </div>
+                <!-- Our links and images -->
+                <div class="links">
+                    <div class="link">
+                        <img src="./images/discord.png" alt="">
+                        <a href="https://discord.dog/282008877753696268">Discord</a>
+                    </div>
+                    <div class="link">
+                        <img src="./images/github.png" alt="">
+                        <a href="https://github.com/sjPsycho">Github</a>
+                    </div>
+                    <div class="link">
+                        <img src="./images/ogu.png" alt="">
+                        <a href="https://ogu.gg/S-J">OGU</a>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</body>
+</html>
