@@ -16,7 +16,8 @@
         <!-- Inputting background video for music -->
         <!--<video id="musicVid" class="body1" autoplay loop src="./videos/video.mp4" width="500px"></video> -->
         <!-- Script to lower volume of video -->
-        <audio id="musicVid" autoplay loop src="./videos/video.mp3" type="audio/mpeg"></audio>
+        <iframe src="videos/video.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio id="musicVid" autoplay loop src="/videos/video.mp3" type="audio/mpeg"></audio>
         <script>
             var v = document.getElementById("musicVid");
             function My_Video() {
