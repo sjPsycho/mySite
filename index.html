@@ -17,30 +17,12 @@
 </head>
 <body>
     <main>
-
-        <!-- Inputting background video for music -->
-        <li>
-            <audio loop autoplay>
-                <source src="videos/video.mp3" type="audio/mpeg">
-            </audio>
-        </li>
-        
-        <!-- Script to lower volume of video -->
-        <script>
-            var v = document.getElementById("musicVid");
-            function My_Video() {
-                v.volume = 0.4;
-            }
-            My_Video();
-        </script>
-
         <!-- Body of page -->
         <div class="body"></div>
         
         <!-- Glass -->
         <section class="glass">
             <!-- Dashboard -->
-            <h1 class="mntnc">Under Maintenance.</h3>
             <div class="dashboard">
                 <div class="user">
                     <img src="./images/avatar1.png" alt="">
@@ -61,6 +43,36 @@
                         <a href="https://ogu.gg/S-J">OGU</a>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Right side of dashboard -->
+            <div class="knowledge">
+                <h1>Languages</h1>
+                <div class="card">
+                    <img src="images/python.png" alt="">
+                    <div class="card-info">
+                       <h2>Python</h2>
+                       <div class="progressPy"></div>
+                    </div>
+                    <h3 class="percentage">37%</h3>
+               </div>
+               <div class="card">
+                   <img src="images/go.png" alt="">
+                   <div class="card-info">
+                      <h2>GoLang</h2>
+                      <div class="progressGo"></div>
+                   </div>
+                   <h3 class="percentage">8%</h3>
+              </div>
+              <div class="card">
+                <img src="images/js.png" alt="">
+                <div class="card-info">
+                   <h2>JavaScript</h2>
+                   <div class="progressJS"></div>
+                </div>
+                <h3 class="percentage">16%</h3>
+           </div>
+            </div>
         </section>
     </main>
     <div class="circle1"></div>
